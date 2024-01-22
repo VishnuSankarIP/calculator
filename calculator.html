@@ -15,24 +15,27 @@
 
 <body>
     <div class="body-class">
-        <div class="card mt-5 h-100" style="width: 32rem;margin-left: 500px;">
+        <div class="card mt-5 h-100" style="width: 32rem;margin-left: 500px;background-color: #2b2b2b;">
             <div class="card-body">
                 <input type="text" id="result" class="form-control"
-                    style="height: 100px;border: 1px solid blueviolet;font-size: 50px;" readonly>
+                    style="height: 100px;border: 1px solid ;font-size: 50px;" readonly>
                 <div class="div1">
                     <div class="row">
                         <div class="col mt-2">
-                            <button>
-                                <h1 style="width: 100px;">(</h1>
+                            <button onclick="clearScreen()">
+                                <h1 style="width: 100px;">AC</h1>
                             </button>
-                            <button>
-                                <h1 style="width: 100px;">)</h1>
-                            </button>
+                              
+                            
+                            
                             <button onclick="backSpace()">
                                 <h1 style="width: 100px;"><i class="fa-solid fa-delete-left"></i></h1>
                             </button>
+                            <button onclick="displayContent('%')">
+                                <h1 style="width: 100px;color: orangered;">%</h1>
+                            </button>
                             <button onclick="displayContent('/')">
-                                <h1 style="width: 100px;color: blueviolet;">/</h1>
+                                <h1 style="width: 100px;color: orangered;">/</h1>
                             </button>
 
                         </div>
@@ -51,7 +54,7 @@
                                 <h1 style="width: 100px;">9</h1>
                             </button>
                             <button onclick="displayContent('*')">
-                                <h1 style="width: 100px;color: blueviolet;">X</h1>
+                                <h1 style="width: 100px;color: orangered;">X</h1>
                             </button>
 
                         </div>
@@ -70,7 +73,7 @@
                                 <h1 style="width: 100px;">6</h1>
                             </button>
                             <button onclick="displayContent('-')">
-                                <h1 style="width: 100px;color: blueviolet;">-</h1>
+                                <h1 style="width: 100px;color: orangered;">-</h1>
                             </button>
 
                         </div>
@@ -89,7 +92,7 @@
                                 <h1 style="width: 100px;">3</h1>
                             </button>
                             <button onclick="displayContent('+')">
-                                <h1 style="width: 100px;color: blueviolet;">+</h1>
+                                <h1 style="width: 100px;color: orangered;">+</h1>
                             </button>
 
                         </div>
@@ -104,11 +107,9 @@
                             <button>
                                 <h1 style="width: 100px;">.</h1>
                             </button>
-                            <button onclick="clearScreen()">
-                                <h1 style="width: 100px;">AC</h1>
-                            </button>
-                            <button style="background-color: blueviolet;" onclick="finalOutput()">
-                                <h1 style="width: 100px;color: white;">=</h1>
+                            
+                            <button style="background-color: orangered;" onclick="finalOutput()">
+                                <h1 style="width: 220px;color: #2b2b2b;">=</h1>
                             </button>
 
                         </div>
